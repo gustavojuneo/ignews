@@ -18,6 +18,8 @@
 
 The project was developed during Ignite (ReactJS) bootcamp from [Rocketseat](http://rocketseat.com.br/), where fundamentals concepts with NextJS, back-end with NextJS and Front-end JamStack using checkout and CMS services were used.
 
+You can view the project accessing the following link https://theignews.vercel.app.
+
 ## Technologies
 - [TypeScript](https://www.typescriptlang.org/)
 - [ReactJS](http://reactjs.org/)
@@ -33,21 +35,16 @@ The project was developed during Ignite (ReactJS) bootcamp from [Rocketseat](htt
 ## How to use
 
 ### Required Environment Variables
-</br>
 
 - NEXTAUTH_URL
-
 - STRIPE_API_KEY
 - NEXT_PUBLIC_STRIPE_PUBLIC_KEY
 - STRIPE_WEBHOOK_SECRET
 - STRIPE_SUCCESS_UR
 - STRIPE_CANCEL_URL
-
 - GITHUB_CLIENT_ID
 - GITHUB_CLIENT_SECRET
-
 - FAUNADB_KEY
-
 - PRISMIC_ENDPOINT
 - PRISMIC_ACCESS_TOKEN
 
