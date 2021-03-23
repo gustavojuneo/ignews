@@ -1,4 +1,3 @@
-import { Subscription } from 'faunadb/src/types/Stream'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { Readable } from 'stream'
 import Stripe from 'stripe'
