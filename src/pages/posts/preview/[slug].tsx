@@ -1,10 +1,13 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { useSession } from 'next-auth/client'
 import Head from 'next/head'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { RichText } from 'prismic-dom'
+import Link from 'next/link'
+
 import { useEffect } from 'react'
+
+import { useSession } from 'next-auth/client'
+
+import { RichText } from 'prismic-dom'
 import { getPrismicClient } from '../../../services/prismic'
 
 import styles from '../post.module.scss'
@@ -31,7 +34,7 @@ export default function PostPreview({ post }: PostPreview) {
   return (
     <>
       <Head>
-        <title>{post.title} | Ignews</title>
+        <title>{post.title} | ig.news</title>
       </Head>
 
       <main className={styles.container}>

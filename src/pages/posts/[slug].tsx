@@ -1,6 +1,8 @@
 import { GetServerSideProps } from 'next'
-import { getSession } from 'next-auth/client'
 import Head from 'next/head'
+
+import { getSession } from 'next-auth/client'
+
 import { RichText } from 'prismic-dom'
 import { getPrismicClient } from '../../services/prismic'
 
@@ -19,7 +21,7 @@ export default function Post({ post }: PostProps) {
   return (
     <>
       <Head>
-        <title>{post.title} | Ignews</title>
+        <title>{post.title} | ig.news</title>
       </Head>
 
       <main className={styles.container}>

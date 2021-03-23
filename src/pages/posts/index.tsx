@@ -1,12 +1,13 @@
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+
 import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom'
 
 import { getPrismicClient } from '../../services/prismic'
 
 import styles from './styles.module.scss'
-import Link from 'next/link'
 
 type Post = {
   slug: string
@@ -23,7 +24,7 @@ export default function Posts({ posts }: PostsProps) {
   return (
     <>
       <Head>
-        <title>Posts | Ignews</title>
+        <title>Posts | ig.news</title>
       </Head>
 
       <main className={styles.container}>
