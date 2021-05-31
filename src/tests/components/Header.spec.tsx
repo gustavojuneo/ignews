@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Header } from '.';
+import { Header } from '../../components/Header';
 
 jest.mock('next/router', () => {
   return {
@@ -22,7 +22,15 @@ jest.mock('next-auth/client', () => {
 describe('Header component', () => {
   it('renders correctly', () => {
     render(<Header />);
+
+    //screen.logTestingPlaygroundURL();
+
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Posts')).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', {
+        name: /sign in with github/i,
+      }),
+    ).toBeInTheDocument();
   });
 });
